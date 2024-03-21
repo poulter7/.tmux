@@ -5,7 +5,7 @@
 #         Copyright 2012— Gregory Pakosz (@gpakosz).
 set -g @plugin 'christoomey/vim-tmux-navigator'
 run '~/.tmux/plugins/tpm/tpm'
-
+bind | split-window -h
 # -- bindings ------------------------------------------------------------------
 
 # preserve tmux stock bindings,
