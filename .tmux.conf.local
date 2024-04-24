@@ -12,7 +12,7 @@ run '~/.tmux/plugins/tpm/tpm'
 is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
     | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|n?vim?x?)(diff)?$'"
 
-https://github.com/RyanMillerC/better-vim-tmux-resizer
+# https://github.com/RyanMillerC/better-vim-tmux-resizer
 # Edit values if you use custom resize_count variables
 bind-key -n M-h if-shell "$is_vim" "send-keys M-h"  "resize-pane -L 10"
 bind-key -n M-j if-shell "$is_vim" "send-keys M-j"  "resize-pane -D 5"
